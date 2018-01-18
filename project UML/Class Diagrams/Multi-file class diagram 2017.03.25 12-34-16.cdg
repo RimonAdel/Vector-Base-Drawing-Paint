@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Canvas" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="183.0" yPosition="435.0">
+      <Fields>
+        <Field name="graphic" type="Graphics" visibility="private"/>
+        <Field name="canvas" type="Canvas" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getInstance" returnType="Canvas" visibility="public" isStatic="true"/>
+        <Method name="paintComponent" returnType="void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="edit" returnType="void" visibility="public">
+          <Argument type="Class" name="clss"/>
+          <Argument type="Color" name="color"/>
+          <Argument type="Color" name="fillColor"/>
+          <Argument type="Point" name="p"/>
+          <Argument type="Map&lt;String, Double&gt;" name="map"/>
+          <Argument type="int" name="i"/>
+        </Method>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Class" name="cls"/>
+          <Argument type="Point" name="p"/>
+          <Argument type="Map&lt;String, Double&gt;" name="map"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GUI" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="2339.0" yPosition="41.0">
+      <Fields>
+        <Field name="plugine" type="JButton" visibility="private"/>
+        <Field name="string" type="String" visibility="private"/>
+        <Field name="drawPlugin" type="boolean" visibility="private"/>
+        <Field name="cload" type="Class&lt;?&gt;" visibility="private"/>
+        <Field name="array" type="JTextField[]" visibility="private"/>
+        <Field name="jt1" type="JTextField" visibility="private"/>
+        <Field name="jt2" type="JTextField" visibility="private"/>
+        <Field name="jt3" type="JTextField" visibility="private"/>
+        <Field name="jt4" type="JTextField" visibility="private"/>
+        <Field name="jt5" type="JTextField" visibility="private"/>
+        <Field name="jt6" type="JTextField" visibility="private"/>
+        <Field name="p" type="Point" visibility="private"/>
+        <Field name="m" type="Map&lt;String, Double&gt;" visibility="private"/>
+        <Field name="returnmap" type="Map" visibility="private"/>
+        <Field name="mmap" type="Map&lt;String, Double&gt;" visibility="private"/>
+        <Field name="counter2" type="int" visibility="private"/>
+        <Field name="path" type="String" visibility="private"/>
+        <Field name="bordercolor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cancel" type="javax.swing.JButton" visibility="private"/>
+        <Field name="circle" type="javax.swing.JButton" visibility="private"/>
+        <Field name="color" type="javax.swing.JButton" visibility="private"/>
+        <Field name="colorinput" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="componentpanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="copy" type="javax.swing.JButton" visibility="private"/>
+        <Field name="delete" type="javax.swing.JButton" visibility="private"/>
+        <Field name="doo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="draw" type="javax.swing.JButton" visibility="private"/>
+        <Field name="drawingarea" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="edit" type="javax.swing.JButton" visibility="private"/>
+        <Field name="ellipse" type="javax.swing.JButton" visibility="private"/>
+        <Field name="fillcolor" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="line" type="javax.swing.JButton" visibility="private"/>
+        <Field name="move" type="javax.swing.JButton" visibility="private"/>
+        <Field name="moveinput" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="plugin" type="javax.swing.JButton" visibility="private"/>
+        <Field name="pointx" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="pointy" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="rectangle" type="javax.swing.JButton" visibility="private"/>
+        <Field name="redo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="shapechooser" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="shapeinput" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="square" type="javax.swing.JButton" visibility="private"/>
+        <Field name="triangle" type="javax.swing.JButton" visibility="private"/>
+        <Field name="undo" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="shapeinput" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="map"/>
+          <Argument type="Class" name="cls"/>
+          <Argument type="int" name="j"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="undoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="circleActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ellipseActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="rectangleActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="squareActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="lineActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="triangleActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="colorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="fillcolorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bordercolorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="moveActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="pointxActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dooActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="deleteActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="editActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="copyActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="pluginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="drawActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="redoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="shapeInput" returnType="void" visibility="private"/>
+        <Method name="plugin2" returnType="void" visibility="public">
+          <Argument type="String" name="pathToJar"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Line" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="5.0" yPosition="3408.0">
+      <Fields>
+        <Field name="lineProperties" type="Map&lt;String, Double&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circle" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="1693.0" yPosition="3447.0">
+      <Fields>
+        <Field name="circleProperties" type="Map&lt;String, Double&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Ellipse" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="1351.0" yPosition="3564.0">
+      <Fields>
+        <Field name="ellipseProperties" type="Map&lt;String, Double&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Engine" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="1110.0" yPosition="879.0">
+      <Fields>
+        <Field name="shapeList" type="LinkedList&lt;Shape&gt;" visibility="protected"/>
+        <Field name="undoList" type="LinkedList&lt;LinkedList&lt;Shape&gt;&gt;" visibility="private"/>
+        <Field name="redoStack" type="Stack&lt;LinkedList&lt;Shape&gt;&gt;" visibility="private"/>
+        <Field name="instanceEngine" type="Engine" visibility="private" isStatic="true"/>
+        <Field name="supportedShapes" type="List&lt;Class&lt;? extends Shape&gt;&gt;" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInstance" returnType="Engine" visibility="public" isStatic="true"/>
+        <Method name="refresh" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="addShape" returnType="void" visibility="public">
+          <Argument type="Shape" name="shape"/>
+        </Method>
+        <Method name="removeShape" returnType="void" visibility="public">
+          <Argument type="Shape" name="shape"/>
+        </Method>
+        <Method name="getShapes" returnType="Shape[]" visibility="public"/>
+        <Method name="getSupportedShapes" returnType="List&lt;Class&lt;? extends Shape&gt;&gt;" visibility="public"/>
+        <Method name="installPluginShape" returnType="void" visibility="public">
+          <Argument type="Class&lt;? extends Shape&gt;" name="shapeClass"/>
+        </Method>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Plugin" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="2055.0" yPosition="530.0">
+      <Fields>
+        <Field name="path" type="String" visibility="private"/>
+        <Field name="s" type="String" visibility="private"/>
+        <Field name="plugininstence" type="Plugin" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="private"/>
+      </Constructors>
+      <Methods>
+        <Method name="getInctance" returnType="Plugin" visibility="public" isStatic="true"/>
+        <Method name="getplugin" returnType="Class&lt;?&gt;" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="path"/>
+        </Method>
+        <Method name="getClassName" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Rectangle" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="342.0" yPosition="3564.0">
+      <Fields>
+        <Field name="recProperties" type="Map&lt;String, Double&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Square" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="679.0" yPosition="3564.0">
+      <Fields>
+        <Field name="squareProperties" type="Map&lt;String, Double&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TheShape" package="eg.edu.alexu.cse.oop.draw" visibility="public" isAbstract="true" xPosition="1013.0" yPosition="2879.0">
+      <Fields>
+        <Field name="position" type="Point" visibility="protected"/>
+        <Field name="color" type="Color" visibility="protected"/>
+        <Field name="fillColor" type="Color" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setPosition" returnType="void" visibility="public">
+          <Argument type="Point" name="position"/>
+        </Method>
+        <Method name="getPosition" returnType="Point" visibility="public"/>
+        <Method name="setProperties" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public" isAbstract="true"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="Color" name="color"/>
+        </Method>
+        <Method name="getColor" returnType="Color" visibility="public"/>
+        <Method name="setFillColor" returnType="void" visibility="public">
+          <Argument type="Color" name="color"/>
+        </Method>
+        <Method name="getFillColor" returnType="Color" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangle" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="1013.0" yPosition="3564.0">
+      <Fields>
+        <Field name="triProperties" type="Map&lt;String, Double&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="DrawingEngine" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Methods>
+        <Method name="addShape" returnType="void" visibility="public">
+          <Argument type="Shape" name="shape"/>
+        </Method>
+        <Method name="removeShape" returnType="void" visibility="public">
+          <Argument type="Shape" name="shape"/>
+        </Method>
+        <Method name="getShapes" returnType="Shape[]" visibility="public"/>
+        <Method name="refresh" returnType="void" visibility="public">
+          <Argument type="java.awt.Graphics" name="canvas"/>
+        </Method>
+        <Method name="getSupportedShapes" returnType="java.util.List&lt;Class&lt;? extends Shape&gt;&gt;" visibility="public"/>
+        <Method name="installPluginShape" returnType="void" visibility="public">
+          <Argument type="Class&lt;? extends Shape&gt;" name="shapeClass"/>
+        </Method>
+        <Method name="undo" returnType="void" visibility="public"/>
+        <Method name="redo" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="Shape" package="eg.edu.alexu.cse.oop.draw" visibility="public" xPosition="969.0" yPosition="1689.0">
+      <Methods>
+        <Method name="setPosition" returnType="void" visibility="public">
+          <Argument type="java.awt.Point" name="position"/>
+        </Method>
+        <Method name="getPosition" returnType="java.awt.Point" visibility="public"/>
+        <Method name="setProperties" returnType="void" visibility="public">
+          <Argument type="java.util.Map&lt;String, Double&gt;" name="properties"/>
+        </Method>
+        <Method name="getProperties" returnType="java.util.Map&lt;String, Double&gt;" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="java.awt.Color" name="color"/>
+        </Method>
+        <Method name="getColor" returnType="java.awt.Color" visibility="public"/>
+        <Method name="setFillColor" returnType="void" visibility="public">
+          <Argument type="java.awt.Color" name="color"/>
+        </Method>
+        <Method name="getFillColor" returnType="java.awt.Color" visibility="public"/>
+        <Method name="draw" returnType="void" visibility="public">
+          <Argument type="java.awt.Graphics" name="canvas"/>
+        </Method>
+        <Method name="clone" returnType="Object" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Engine" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="eg.edu.alexu.cse.oop.draw.Plugin" target="eg.edu.alexu.cse.oop.draw.Plugin" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Square" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <HasRelation name="canvas" source="eg.edu.alexu.cse.oop.draw.Canvas" target="eg.edu.alexu.cse.oop.draw.Canvas" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Shape" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eg.edu.alexu.cse.oop.draw.TheShape" target="eg.edu.alexu.cse.oop.draw.Shape"/>
+    <HasRelation name="plugininstence" source="eg.edu.alexu.cse.oop.draw.Plugin" target="eg.edu.alexu.cse.oop.draw.Plugin" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="eg.edu.alexu.cse.oop.draw.DrawingEngine" target="eg.edu.alexu.cse.oop.draw.Shape" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="eg.edu.alexu.cse.oop.draw.Canvas" target="eg.edu.alexu.cse.oop.draw.Canvas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Line" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <HasRelation name="redoStack" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Shape" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="Stack&lt;LinkedList&lt;Shape&gt;&gt;"/>
+    <HasRelation name="supportedShapes" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Shape" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Class&lt;? extends Shape&gt;&gt;"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Ellipse" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Rectangle" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.DrawingEngine"/>
+    <HasRelation name="shapeList" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Shape" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="LinkedList&lt;Shape&gt;"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Triangle" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <HasRelation name="instanceEngine" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Engine" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="eg.edu.alexu.cse.oop.draw.Circle" target="eg.edu.alexu.cse.oop.draw.TheShape"/>
+    <HasRelation name="undoList" source="eg.edu.alexu.cse.oop.draw.Engine" target="eg.edu.alexu.cse.oop.draw.Shape" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="LinkedList&lt;LinkedList&lt;Shape&gt;&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Project  1/src"/>
+	<classpathentry kind="lib" path="Plugin/arc.jar"/>
+	<classpathentry kind="lib" path="Plugin/new.jar"/>
+	<classpathentry kind="lib" path="Plugin/Plugin.jar"/>
+	<classpathentry kind="lib" path="Project  1/dist/vector draw.jar"/>
+	<classpathentry kind="output" path="Project  1/build/classes"/>
+</classpath>
